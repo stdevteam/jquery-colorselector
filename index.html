@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery color selector plugin from STDev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="jQuery color selector plugin from STDev">
+    <meta name="author" content="STDev http://st-dev.com">
+
+    <style type="text/css">
+      body {
+        padding-top: 5px;
+      }
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.colorbox.min.js"></script>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+			$("#small-selector").colorbox({
+				labels: [
+					'Black', 'Brown', 'Cardinal', 'Columbia', 'DkGreen', 'Gold', 'Gray', 
+					'Kelly', 'Maroon', 'Navy', 'Orange', 'Pink', 'Purple', 'Red', 'Royal', 'White'
+				],
+				colors: [
+					'000000', '502800', '500000', '1F2264', '003200', '646400', '4B4B4B', '005000', 
+					'320000', '000032', '643C00', '642864', '330032', '640000', '000064', 'fdfdfd'
+				],
+				width: 20,
+				height: 20,
+				top: 0,
+				left: 0,
+				perLine: 4,
+				onSelect: function($selected, color, index, label){
+					$("#RosterHomeJersey").val(index);
+				}
+			});
+			
+			$("#big-selector").colorbox({
+				labels: [
+					'Black', 'Brown', 'Cardinal', 'Columbia', 'DkGreen', 'Gold', 'Gray', 
+					'Kelly', 'Maroon', 'Navy', 'Orange', 'Pink', 'Purple', 'Red', 'Royal', 'White'
+				],
+				colors: [
+					'000000', '502800', '500000', '1F2264', '003200', '646400', '4B4B4B', '005000', 
+					'320000', '000032', '643C00', '642864', '330032', '640000', '000064', 'fdfdfd'
+				],
+				width: 50,
+				height: 50,
+				top: 0,
+				left: 0,
+				perLine: 4,
+				onSelect: function($selected, color, index, label){
+					$("#RosterAwayJersey").val(index);
+				}
+			});
+			
+			$("#small-selector").colorbox('setColorIndex', 1);
+			$("#big-selector").colorbox('setColorIndex', 2);
+		});
+	</script>
+  </head>
+
+	<body>
+		<div>
+
+			<h1>jQuery color selector plugin from STDev</h1>
+			For more info please visit <a href="http://st-dev.com">STDev website</a>
+			<br />
+			<br />
+			<p>
+			Click on a colored box to see the selectors in action
+			</p>
+			<br />
+			<div>
+				<div style="height: 120px;">						
+					<strong>Smaller color selector:</strong>
+					
+					<div style="position: relative;">
+						<div id="small-selector" style="width: 20px;height: 20px;cursor: pointer;"></div>
+					</div>
+				</div>
+				
+				<div>
+					<strong>A bigger one:</strong>
+					
+					<div style="position: relative;">
+						<div id="big-selector" style="width: 50px;height: 50px;cursor: pointer;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
