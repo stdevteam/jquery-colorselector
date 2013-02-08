@@ -1,6 +1,6 @@
 /*! jQuery Colorbox Plugin - v1.0 - 08/01/2013
 * https://github.com/stdevteam/jquery-colorselector
-* Copyright (c) 2013 STDev (http://st-dev.com); Licensed MIT, GPL */
+* Copyright (c) 2013 STDev (http://st-dev.com); Licensed MIT */
 (function($) {
     
     var counter = 0;

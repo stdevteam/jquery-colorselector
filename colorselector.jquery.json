@@ -1,0 +1,39 @@
+{
+    "name": "colorselector",
+    "title": "jQuery Colorselector",
+    "description": "A color picker that allows users to pick a color from a set of predefined colors.",
+    "keywords": [
+		"jquery",
+        "color",
+        "colorselector",
+		"colorpicker",
+		"colorchooser",
+		"picker",
+		"selector"
+    ],
+    "version": "1.0",
+    "author": {
+        "name": "STDev",
+        "url": "http://st-dev.com/"
+    },
+	"maintainers": [
+        {
+            "name": "STDev",
+            "email": "jquery@st-dev.com",
+            "url": "http://st-dev.com/"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "bugs": "https://github.com/stdevteam/jquery-colorselector/issues",
+    "homepage": "https://github.com/stdevteam/jquery-colorselector",
+    "docs": "https://github.com/stdevteam/jquery-colorselector",
+    "download": "https://github.com/stdevteam/jquery-colorselector/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
